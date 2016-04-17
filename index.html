@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="parallax.min.js"></script>
+</head>
+
+<body>
+
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="1.jpg" data-natural-width="1400" data-natural-height="900" style="height: 459px;"></div>
+
+    <section>
+        <div class="container">
+            <h2 id="installation">Installation</h2>
+
+            <p>Download and include
+                <code>parallax.min.js</code>in your document after including jQuery.</p>
+
+            <pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="/path/to/parallax.js"&gt;&lt;/script&gt;
+</code></pre>
+
+            <h2 id="useage">Useage</h2>
+
+            <h3 id="viadataattributes">Via data attributes</h3>
+
+            <p>To easily add a parallax effect behind an element, add
+                <code>data-parallax="scroll"</code>to the element you want to use, and specify an image with
+                <code>data-image-src="/path/to/image.jpg"</code>.</p>
+
+            <pre><code>&lt;div class="parallax-window" data-parallax="scroll" data-image-src="/path/to/image.jpg"&gt;&lt;/div&gt;
+</code></pre>
+
+            <h3 id="viajavascript">Via JavaScript</h3>
+
+            <p>To call the parallax plugin manually, simply select your target element with jQuery and do the following:</p>
+
+            <pre><code>$('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
+</code></pre>
+
+            <h3 id="underthehood">Under The Hood</h3>
+
+            <p>What parallax.js will do is create a fixed-position element for each parallax image at the start of the document’s body. This mirror element will sit behind the other elements and match the position and dimensions of its target object.</p>
+
+            <p>Due to the nature of this implementation, you must ensure that these parallax objects and any layers below them are transparent so that you can see the parallax effect underneath. Also, if there is no other content in this element, you will need to ensure that it has some fixed dimensions otherwise you won’t see anything.</p>
+
+            <pre><code>.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+</code></pre>
+        </div>
+    </section>
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="2.jpg" data-natural-width="1400" data-natural-height="1400" style="height: 459px;"></div>
+
+<section>
+        <div class="container">
+            <h2 id="installation">Installation</h2>
+
+            <p>Download and include
+                <code>parallax.min.js</code>in your document after including jQuery.</p>
+
+            <pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="/path/to/parallax.js"&gt;&lt;/script&gt;
+</code></pre>
+
+            <h2 id="useage">Useage</h2>
+
+            <h3 id="viadataattributes">Via data attributes</h3>
+
+            <p>To easily add a parallax effect behind an element, add
+                <code>data-parallax="scroll"</code>to the element you want to use, and specify an image with
+                <code>data-image-src="/path/to/image.jpg"</code>.</p>
+
+            <pre><code>&lt;div class="parallax-window" data-parallax="scroll" data-image-src="/path/to/image.jpg"&gt;&lt;/div&gt;
+</code></pre>
+
+            <h3 id="viajavascript">Via JavaScript</h3>
+
+            <p>To call the parallax plugin manually, simply select your target element with jQuery and do the following:</p>
+
+            <pre><code>$('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
+</code></pre>
+
+            <h3 id="underthehood">Under The Hood</h3>
+
+            <p>What parallax.js will do is create a fixed-position element for each parallax image at the start of the document’s body. This mirror element will sit behind the other elements and match the position and dimensions of its target object.</p>
+
+            <p>Due to the nature of this implementation, you must ensure that these parallax objects and any layers below them are transparent so that you can see the parallax effect underneath. Also, if there is no other content in this element, you will need to ensure that it has some fixed dimensions otherwise you won’t see anything.</p>
+
+            <pre><code>.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+</code></pre>
+        </div>
+    </section>
+</body>
+
+</html>
